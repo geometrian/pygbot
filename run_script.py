@@ -8,14 +8,14 @@ import sys
 
 
 sys.stdout.write("\rRunning program . . .        "); sys.stdout.flush()
-proc = subprocess.Popen(["python","__program.py"],shell=True)
+proc = subprocess.Popen(["python","tmp/__program.py"],shell=True)
 
 sys.stdout.write("\rWaiting for program . . .    "); sys.stdout.flush()
 time.sleep(3.0)
 
 sys.stdout.write("\rTaking screenshot . . .      "); sys.stdout.flush()
 image = pyscreenshot.grab()
-image.save("__screenshot.png")
+image.save("tmp/__screenshot.png")
 
 ##import os
 ##os.system("import -window root __screenshot.png")

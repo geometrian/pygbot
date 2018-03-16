@@ -40,3 +40,5 @@ Without an attachment, you can mention "help" to get it to describe its usage, o
 Sandboxing is not yet implemented.  This is a security risk.
 
 Capturing a screenshot does not work on at least VirtualBox VMs.  I believe this is a bug in their graphics utilities, but more study is needed.
+
+If the program results in an error, the bot will happily take a screenshot anyway.  Instead, it should report the error with an apologetic or encouraging message.
