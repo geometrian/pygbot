@@ -1,0 +1,8 @@
+{
+	"name": "PyGame Screenshot Bot",
+	"version": "1.0.0",
+	"description": "Runs your code for one second, then takes screenshot and posts it.",
+	"main": "bot.js",
+	"author": "Ian Mallett",
+	"dependencies": {}
+}
