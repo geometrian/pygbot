@@ -59,6 +59,7 @@ client.on("message", function (user, userID, channelID, msg, evt) {
 		if (evt.d.attachments.length==1) {
 			client.addReaction({ channelID:channelID, messageID:evt.d.id, reaction:random_choice(msgs_reactions) });
 
+			if (!fs.existsSync("tmp")) { fs.mkdirSync("tmp"); }
 			download(evt.d.attachments[0].url,"tmp/__program.py",function () {
 				child_process.exec("python ./run_script.py", function (error, stdout, stderr) {
 					//client.sendMessage({ to:channelID, message:"error: \""+error+"\", stdout: \""+stdout+"\", stderr: \""+stderr+"\"" });
