@@ -18,9 +18,9 @@ This is a bot for Discord that, when you upload an attachment and tag it, will d
 2. Create and add the Discord app:
     1. Go to [https://discordapp.com/developers/applications/me](https://discordapp.com/developers/applications/me) and click "New App".
     2. The recommended app name is "pygbot" (Python Graphics Bot).  Add a helpful description, if you like.  Click "Create App".
-    3. Copy the client ID into "CLIENTID" in this URL: https://discordapp.com/oauth2/authorize?&client_id=CLIENTID&scope=bot&permissions=0
-    4. Go to that URL and select a server you control.  A placeholder for the bot will join the server.
-    5. Add bot user.
+    3. Add bot user.
+    4. Copy the client ID into "CLIENTID" in this URL: https://discordapp.com/oauth2/authorize?&client_id=CLIENTID&scope=bot&permissions=0
+    5. Go to that URL and select a server you control.  A placeholder for the bot will join the server.
     6. Copy the token into the field in "token.json".
 3. Start bot: `node pygbot.js`
 
